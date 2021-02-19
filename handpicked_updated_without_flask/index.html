@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>HandPicked</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css"/>
+
+    <script type="text/javascript">
+      window.onload = function() {
+        L.mapquest.key = 'lYrP4vF3Uk5zgTiGGuEzQGwGIVDGuy24';
+
+        var map = L.mapquest.map('map', {
+          center: [40.7128, -74.0059],
+          layers: L.mapquest.tileLayer('map'),
+          zoom: 13
+        });
+
+        L.mapquest.directions().route({
+          start: 'Michigan Avenue, Chicago',
+          end: 'Lincoln Boulevard, Los Angeles'
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <div class="header-container">
+      <form class="login">
+        <input type="text" placeholder="username">
+        <input type="text" placeholder="password">
+        <button type="submit">login</button>
+      </form>
+    </div>
+    <div class="topcontainer">
+    <h1>HandPicked</h1>
+    <span>
+      <a href="index.html">home</a>
+      <a href="#basket">basket</a>
+      <a href="#contact">contact</a>
+    </span>
+    </div>
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="slide-flexbox">
+        <div class="image-description"><p>another blah blah blah adjkfba dfbjsdfg adkjfbadbg kajbdfjb kbdjf jbkdjk</p></div>
+        <img src="https://i.etsystatic.com/6969364/d/il/91199e/2846514484/il_340x270.2846514484_t8by.jpg?version=0" style="width:100%">
+        </div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class=slide-flexbox>
+        <div>
+        <img src="https://images-na.ssl-images-amazon.com/images/I/617j72hC%2B3L._AC_SX569_.jpg" style="width:400px">
+        </div>
+        <div class="image-description"><p>A guitar pick with lifelong endurance and superb accuracy. Playing with a titanium pick can create new and different subtleties that cannot be made with plastic or other materials.</p></div>
+        </div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class=slide-flexbox>
+        <div>
+        <img src="https://cf.ltkcdn.net/guitar/images/orig/258364-2120x1414-Rainbow_Swirl_Guitar_pick.jpg" style="width:100%">
+        </div>
+        <div class="image-description"><p>blahblahblahblahsdfgsdgfuisdfbvldbf eufgfgbbad lesuhgfshdsf usdghbd</p></div>
+      </div>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+    <script src="script.js"></script>
+    <div class="description">
+    <h2>About our picks...</h2>
+    <p>A plectrum for electric guitars, acoustic guitars, bass guitars and mandolins is typically a thin piece of plastic or other material shaped like a pointed teardrop or triangle. The size, shape and width may vary considerably. Banjo and guitar players may wear a metal or plastic thumb pick mounted on a ring, and bluegrass banjo players often wear metal or plastic fingerpicks on their fingertips. Guitarists also use fingerpicks.</p>
+    </div>
+    <div class="container">
+      <div class="item">
+        <img src="https://static.bax-shop.es/image/product/42149/1131799/21a66e43/450x450/1501143632Dunlop_Tortex_Standard_red_50mm.jpg" height="100px">
+        <h3>Nylon</h3>
+        <p>description</p>
+        <p>price</p>
+        <form>
+          
+            <select id="colours" name="colours">
+              <option value="choose">Choose a colour</option>
+              <option value="tortoiseshell">Tortoise shell</option>
+              <option value="clear">Clear</option>
+              <option value="glowinthedark">Glow-in-the-dark</option>
+              <option value="red">Red</option>
+            </select>
+          </br>
+            <select id="image" name="image">
+              <option value="choose">Choose an image</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </br>
+            <input type="text" class="engraving" placeholder="Your engraving"></input>
+        </form>
+      </div>
+      <div class="item">
+        <img src="https://static.bax-shop.es/image/product/42149/1131799/21a66e43/450x450/1501143632Dunlop_Tortex_Standard_red_50mm.jpg" height="100px">
+        <h3>Titanium</h3>
+        <p>description</p>
+        <p>price</p>
+        <form>
+          
+            <select id="finish" name="finish">
+              <option value="choose">Choose a finish</option>
+              <option value="Brushed">Brushed</option>
+              <option value="Polished">Polished</option>
+              <option value="lightmatte">Light Matte</option>
+              <option value="darkmatte">Dark Matte</option>
+            </select>
+          </br>
+            <select id="image" name="image">
+              <option value="choose">Choose an image</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </br>
+            <input type="text" class="engraving" placeholder="Your engraving"></input>
+        </form>
+      </div>
+      <div class="item">
+        <img src="https://static.bax-shop.es/image/product/42149/1131799/21a66e43/450x450/1501143632Dunlop_Tortex_Standard_red_50mm.jpg" height="100px">
+        <h3>Thumb Pick</h3>
+        <p>description</p>
+        <p>price</p>
+        <form>
+          
+            <select id="colours" name="colours">
+              <option value="choose">Choose a colour</option>
+              <option value="tortoiseshell">Tortoise shell</option>
+              <option value="clear">Clear</option>
+              <option value="glowinthedark">Glow-in-the-dark</option>
+              <option value="red">Red</option>
+            </select>
+          </br>
+            <select id="image" name="image">
+              <option value="choose">Choose an image</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </br>
+            <input type="text" class="engraving" placeholder="Your engraving"></input>
+        </form>
+      </div>
+    </div>
+      <footer>
+        <div class="container2">
+          <div class="links">
+            <h2>External links</h2>
+            <a href="">link 1</a>
+            <br/>
+            <br/>
+            <a href="">link 2</a>
+            <br/>
+            <br/>
+            <a href="">link 3</a>
+          </div>
+          <div class="contact">
+            <h2>Contact form</h2>
+            <form>
+              <input type="text" placeholder="Your_email@email.com"></input>
+              <br/>
+              <br/>
+              <textarea cols="30" rows="4" placeholder="your message..."></textarea>
+              
+              <br/>
+              <br/>
+              <button type="submit">Send</button>
+            </form>
+
+          </div>
+        </div>
+      </footer>
+      <div id="map" style="width: 100%; height: 530px;"></div>
+  </body>
+</html>

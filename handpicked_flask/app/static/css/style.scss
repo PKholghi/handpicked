@@ -1,0 +1,66 @@
+$sp: 10px;
+$primary-color: rgb(192, 216, 248);
+
+a {
+    color:black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $primary-color;
+}
+
+select, input.engraving {
+    margin:$sp / 2;
+}
+
+.container {
+    display: flex;
+  }
+  
+  .carousel {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .item {
+    padding:$sp;
+    text-align: center;
+    width:30%;
+    }
+  
+  .container2 {
+    display: flex;
+    justify-content: space-between;
+    background-color:$primary-color;
+    padding:$sp;
+  }
+  
+  .contact {
+    text-align: right;
+  }
+  
+  .topcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:$sp;
+  }
+  
+  body {
+    font-family: Verdana, 'Sans-serif';
+    margin: 0px;
+  }
+  
+  .login {
+    padding: $sp;
+  }
+  
+  .description {
+    padding: $sp;
+  }
+  
+  div {
+    padding: $sp;
+  }
