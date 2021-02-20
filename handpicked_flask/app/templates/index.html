@@ -7,7 +7,7 @@
     <link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet" type="text/css" />
   </head>
   <body style="margin: 0 auto; max-width: 1300px;"> <!--Added styling for margins here, doesn't work in CSS for some reason?-->
-    <form class="login" action="/" method="POST">
+    <form class="login" action="/login" method="POST">
       <input type="text" placeholder="Username" name="username">
       <input type="password" placeholder="Password" name="password">
       <button type="submit" value="Send">login</button>
@@ -151,8 +151,8 @@
           </div>
           <div class="contact">
             <h2>Contact form</h2>
-            <form action="/info" method="POST">
-              <input type="text" placeholder="Your_email@email.com"></input>
+            <form action="/contact-us" method="POST">
+              <input type="text" placeholder="Your_email@email.com" name="email"></input>
               <br/>
               <br/>
               <textarea cols="30" rows="4" placeholder="your message..."></textarea>
