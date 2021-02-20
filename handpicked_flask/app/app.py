@@ -4,14 +4,18 @@ app = Flask(__name__)
 
 @app.route('/', methods=["GET", "POST"])
 def home():
-    if request.method == "POST":
-        if request.form['username'] != 'admin': 
-             username = request.form["username"]
-             # password = request.form["password"]      
-        return render_template("login.html")
-        # password = request.form["password"]
-    else:
-        return render_template("index.html")
+    return render_template("index.html")
+
+@app.route('/login', methods=["GET", "POST"])
+def login():
+    username = request.form["username"]
+    return "Welcome " + username +"!"
+
+@app.route('/contact-us', methods=["GET", "POST"])
+def contact_us():
+    email = request.form["email"]
+    return "Thank you for getting in touch! We'll get back to you soon at " + email
+
 
 if __name__ == '__main__':
     app.run()
